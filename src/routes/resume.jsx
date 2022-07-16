@@ -3,6 +3,7 @@ import { Footer } from '../components/Footer'
 import { ResumeItem } from '../components/ResumeItem'
 import { useMediaQuery } from 'react-responsive'
 import { resumeItems } from '../data/resumeitems'
+import { AppHeader } from '../components/AppHeader'
 
 const rItems = resumeItems
 
@@ -33,6 +34,7 @@ export default function Resume() {
   }
   return (
     <div>
+      <AppHeader />
       <MainImage
         title={'RESUME'}
         subtitle1={'Kousuke Masuda'}

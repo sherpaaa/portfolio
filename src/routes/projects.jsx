@@ -3,6 +3,7 @@ import { ProjectCard } from '../components/ProjectCard'
 import { Footer } from '../components/Footer'
 import { useMediaQuery } from 'react-responsive'
 import { pItems } from '../data/projects'
+import { AppHeader } from '../components/AppHeader'
 
 const projectitems = pItems
 
@@ -36,6 +37,7 @@ export default function Projects() {
   ))
   return (
     <div>
+      <AppHeader />
       <MainImage
         title={'PROJECTS'}
         subtitle1={'Kousuke Masuda'}

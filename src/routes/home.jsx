@@ -3,6 +3,7 @@ import iconImg from '../img/icon.JPG'
 import { SnsButton } from '../components/SnsButton'
 import { Footer } from '../components/Footer'
 import { useMediaQuery } from 'react-responsive'
+import { AppHeader } from '../components/AppHeader'
 
 export default function Home() {
   const isMoble = useMediaQuery({ query: '(max-width:780px' })
@@ -56,6 +57,7 @@ export default function Home() {
 
   return (
     <div>
+      <AppHeader />
       <MainImage
         title={'KOUSUKE MASUDA'}
         subtitle1={'Product Design'}
@@ -66,7 +68,7 @@ export default function Home() {
         <div style={profileContainer}>
           <img src={iconImg} alt="" style={imgStyle} />
           <span style={profileTitle}>KOSUKE MASUDA</span>
-          <span style={profileNote}>Digital Peoduct Designer</span>
+          <span style={profileNote}>Digital Product Designer</span>
           <span style={profileNote}>×</span>
           <span style={profileNote}>UX Researcher</span>
         </div>
@@ -81,7 +83,7 @@ export default function Home() {
             UXリサーチに加え、リサーチに基づいたUI設計も担当。
           </p>
           <p style={profileText}>
-            2018年4月より、freee株式会社入社。クラウド会計ソフトのUXリサーチ・デザインを担当する。
+            2018年4月にfreee株式会社入社。クラウド会計ソフトのUXリサーチ・デザインを担当する。
             ほぼゼロの状態からUXリサーチをプロダクト開発チームに根付かせ、ユーザー視点でのプロダクト開発文化を定着させた経験を持つ。リサーチチームの立ち上げを経て、freee人事労務や税理士向けのプロダクトのリサーチ・デザインを担当。{' '}
           </p>
           <p style={profileText}>HCD-Net認定人間中心設計専門家の資格保有</p>

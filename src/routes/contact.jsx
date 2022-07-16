@@ -1,6 +1,7 @@
 import { MainImage } from '../components/MainImage'
 import { Footer } from '../components/Footer'
 import { useMediaQuery } from 'react-responsive'
+import { AppHeader } from '../components/AppHeader'
 
 export default function Contact() {
   const isMoble = useMediaQuery({ query: '(max-width:780px' })
@@ -33,6 +34,7 @@ export default function Contact() {
   }
   return (
     <div>
+      <AppHeader />
       <MainImage
         title={'CONTACT'}
         subtitle1={'Kousuke Masuda'}

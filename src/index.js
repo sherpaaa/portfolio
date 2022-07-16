@@ -8,6 +8,7 @@ import Home from './routes/home'
 import Resume from './routes/resume'
 import Projects from './routes/projects'
 import Contact from './routes/contact'
+import { Error404 } from './routes/error404'
 import ScrollToTop from './components/ScrollToTop'
 
 import './styles.css'
@@ -17,12 +18,12 @@ root.render(
   <BrowserRouter>
     <ScrollToTop />
     <Routes>
-      <Route path="/" element={<App />}>
-        <Route path="home" element={<Home />} />
-        <Route path="resume" element={<Resume />} />
-        <Route path="projects" element={<Projects />} /> |{' '}
-        <Route path="contact" element={<Contact />} />
-      </Route>
+      <Route path="/" element={<Home />} />
+      <Route path="home" element={<Home />} />
+      <Route path="resume" element={<Resume />} />
+      <Route path="projects" element={<Projects />} />
+      <Route path="contact" element={<Contact />} />
+      <Route path="*" element={<Error404 />} />
     </Routes>
   </BrowserRouter>,
 )
