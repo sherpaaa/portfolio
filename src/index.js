@@ -10,7 +10,6 @@ import Projects from './routes/projects'
 import Contact from './routes/contact'
 import { Error404 } from './routes/error404'
 import ScrollToTop from './components/ScrollToTop'
-
 import './styles.css'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
