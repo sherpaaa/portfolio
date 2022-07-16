@@ -1,6 +1,16 @@
+import defaultImg from '../img/noImage.png'
+import pImg1 from '../img/projectImg/01.png'
+import pImg2 from '../img/projectImg/02.png'
+import pImg3 from '../img/projectImg/03.png'
+import pImg4 from '../img/projectImg/04.png'
+import pImg5 from '../img/projectImg/05.png'
+import pImg6 from '../img/projectImg/06.png'
+import pImg7 from '../img/projectImg/07.png'
+
 export const pItems = [
   {
     index: '1',
+    rf: pImg1,
     ptitle: '初期ユーザー向け移行サポート機能の開発',
     ptag1: '受容性評価',
     ptag2: 'ワークショップ',
@@ -10,6 +20,7 @@ export const pItems = [
   },
   {
     index: '2',
+    rf: pImg2,
     ptitle: '初期ユーザー向けセットアップガイドの開発',
     ptag1: 'UIデザイン',
     ptag2: 'ユーザーインタビュー',
@@ -19,6 +30,7 @@ export const pItems = [
   },
   {
     index: '3',
+    rf: pImg3,
     ptitle: 'デザインチームでの定期リサーチの定着',
     ptag1: 'プロセス設計',
     ptag2: 'ユーザーテスト',
@@ -28,6 +40,7 @@ export const pItems = [
   },
   {
     index: '4',
+    rf: pImg4,
     ptitle: '給与計算機能の新規デザイン',
     ptag1: 'UIデザイン',
     ptag2: 'ユーザーインタビュー',
@@ -37,6 +50,7 @@ export const pItems = [
   },
   {
     index: '5',
+    rf: pImg5,
     ptitle: 'リサーチチームの立ち上げ',
     ptag1: 'プロセス設計',
     ptag2: 'ユーザーインタビュー',
@@ -46,6 +60,7 @@ export const pItems = [
   },
   {
     index: '6',
+    rf: pImg6,
     ptitle: '新規モジュールの受容性リサーチ',
     ptag1: 'ユーザーインタビュー',
     ptag2: 'プロトタイピング',
@@ -55,6 +70,7 @@ export const pItems = [
   },
   {
     index: '7',
+    rf: pImg7,
     ptitle: 'プロダクト戦略チームへのリサーチ導入',
     ptag1: 'リサーチプロセスの設計',
     ptag2: 'ユーザーインタビュー',

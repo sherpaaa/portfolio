@@ -47,7 +47,7 @@ export const ProjectCard = (props) => {
   }
   return (
     <div style={projectBase}>
-      <img src={defaultImg} alt="no data" style={projectImg} />
+      <img src={props.rf} alt="データなし" style={projectImg} />
       <h3 style={projectTitle}>{props.ptitle}</h3>
       <span style={tag}>{props.ptag1}</span>{' '}
       <span style={tag}>{props.ptag2}</span>{' '}

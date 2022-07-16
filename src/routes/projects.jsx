@@ -19,7 +19,7 @@ export default function Projects() {
     display: 'flex',
     flexWrap: isDesktop && 'wrap',
     flexDirection: isMoble && 'column',
-    alignItems: 'center',
+    alignItems: 'flex-start',
     justifyContent: 'space-between',
     marginTop: '4rem',
     marginBottom: '8rem',
@@ -28,6 +28,7 @@ export default function Projects() {
   const projectList = projectitems.map((pitem, index) => (
     <ProjectCard
       key={index}
+      rf={pitem.rf}
       ptitle={pitem.ptitle}
       ptag1={pitem.ptag1}
       ptag2={pitem.ptag2}
