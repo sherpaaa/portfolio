@@ -11,15 +11,16 @@ export default function Projects() {
   const isDesktop = useMediaQuery({
     query: '(min-width:780px)',
   })
-  const isMoble = useMediaQuery({ query: '(max-width:780px' })
+  const isMobile = useMediaQuery({ query: '(max-width:780px' })
 
   const projectWrapper = {
     maxWidth: '48rem',
     margin: '0 auto',
     display: 'flex',
     flexWrap: isDesktop && 'wrap',
-    flexDirection: isMoble && 'column',
-    alignItems: 'flex-start',
+    flexDirection: isMobile && 'column',
+    alignItems: isDesktop && 'flex-start',
+    alignItems: isMobile && 'center',
     justifyContent: 'space-between',
     marginTop: '4rem',
     marginBottom: '8rem',

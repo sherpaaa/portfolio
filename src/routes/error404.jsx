@@ -10,10 +10,11 @@ export const Error404 = () => {
     alignItems: 'center',
   }
   const errorTitle = {
-    fontSize: '8rem',
+    fontSize: '4rem',
     fontWeight: '900',
     letterSpacing: '1rem',
     margin: '0',
+    textAlign: 'center',
   }
 
   const errorCaption = {
@@ -32,8 +33,14 @@ export const Error404 = () => {
   return (
     <>
       <div style={eroorWrapper}>
-        <h1 style={errorTitle}>404</h1>
-        <p style={errorCaption}>ページが見つかりません</p>
+        <h1 style={errorTitle}>
+          404
+          <br />
+          ฅ^•ω•^ฅ
+        </h1>
+        <p style={errorCaption}>
+          おっと、ねこちゃんは見つかりましたが、ページは見つかりませんでした
+        </p>
         <Link to="/home" style={backtoHome}>
           HOMEへ戻る
         </Link>
