@@ -19,11 +19,11 @@ root.render(
   <BrowserRouter>
     <ScrollToTop />
     <Routes basename={process.env.PUBLIC_URL}>
-      <Route path="/" element={<Home />} />
-      <Route path="/home" element={<Home />} />
-      <Route path="/resume" element={<Resume />} />
-      <Route path="/projects" element={<Projects />} />
-      <Route path="/contact" element={<Contact />} />
+      <Route path="/portfolio/" element={<Home />} />
+      <Route path="/portfolio/home" element={<Home />} />
+      <Route path="/portfolio/resume" element={<Resume />} />
+      <Route path="/portfolio/projects" element={<Projects />} />
+      <Route path="/portfolio/contact" element={<Contact />} />
       <Route path="*" element={<Error404 />} />
     </Routes>
   </BrowserRouter>,
