@@ -6,7 +6,7 @@ import { useMediaQuery } from 'react-responsive'
 import { AppHeader } from '../components/AppHeader'
 
 export default function Home() {
-  const isMoble = useMediaQuery({ query: '(max-width:780px' })
+  const isMobile = useMediaQuery({ query: '(max-width:780px)' })
 
   const profileWrapper = {
     display: 'flex',
@@ -45,7 +45,7 @@ export default function Home() {
 
   const profileTextWrapper = {
     maxWidth: '40rem',
-    padding: isMoble && '0 1.5rem',
+    padding: '0 1.5rem',
   }
 
   const profileText = {
@@ -100,7 +100,7 @@ export default function Home() {
             />
             <SnsButton
               title={'Wantedly'}
-              color={'#21BDDB'}
+              color={'#21bddb'}
               link={'https://www.wantedly.com/id/kosuke_masuda'}
             />
           </div>
