@@ -8,7 +8,7 @@ import { AppHeader } from '../components/AppHeader'
 const rItems = resumeItems
 
 export default function Resume() {
-  const isMoble = useMediaQuery({ query: '(max-width:780px' })
+  const isMobile = useMediaQuery({ query: '(max-width:780px' })
 
   const resumeList = rItems.map((ritem, index) => (
     <ResumeItem
@@ -30,7 +30,7 @@ export default function Resume() {
     justifyContent: 'space-between',
     marginTop: '4rem',
     marginBottom: '8rem',
-    padding: isMoble && '0 1.5rem',
+    padding: '0 1.5rem',
   }
   return (
     <div>

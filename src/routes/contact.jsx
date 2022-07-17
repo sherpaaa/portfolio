@@ -4,7 +4,7 @@ import { useMediaQuery } from 'react-responsive'
 import { AppHeader } from '../components/AppHeader'
 
 export default function Contact() {
-  const isMoble = useMediaQuery({ query: '(max-width:780px' })
+  const isMobile = useMediaQuery({ query: '(max-width:780px' })
 
   const contactContainer = {
     maxWidth: '40rem',
@@ -14,7 +14,7 @@ export default function Contact() {
     justifyContent: 'space-between',
     marginTop: '4rem',
     marginBottom: '8rem',
-    padding: isMoble && '0 1.5rem',
+    padding: '0 1.5rem',
   }
 
   const contactText = {
