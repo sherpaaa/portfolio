@@ -1,5 +1,6 @@
 import { useMediaQuery } from 'react-responsive'
 import { Link } from 'react-router-dom'
+import MediaQuery from 'react-responsive'
 
 export const Footer = () => {
   const isMoble = useMediaQuery({ query: '(max-width:780px' })
@@ -45,7 +46,7 @@ export const Footer = () => {
 
   return (
     <>
-      {isMoble && (
+      <MediaQuery maxWidth={780}>
         <nav>
           <div
             id="drawer"
@@ -77,7 +78,8 @@ export const Footer = () => {
             </ul>
           </div>
         </nav>
-      )}
+      </MediaQuery>
+
       <footer style={footerStyle}>
         <p style={footerText}>© 2022 KOUSUKE MASUDA</p>
       </footer>
