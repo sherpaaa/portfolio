@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { useMediaQuery } from 'react-responsive'
 import { useState } from 'react'
 import { MdMenu } from 'react-icons/md'
+import MediaQuery from 'react-responsive'
 
 export const AppHeader = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -126,7 +127,7 @@ export const AppHeader = () => {
               <MdMenu />
             </button>
           )}
-          {isMenuOpen && (
+          <MediaQuery maxWidth={780}>
             <div
               id="drawer"
               class="drawer"
@@ -179,7 +180,7 @@ export const AppHeader = () => {
                 </button>
               </ul>
             </div>
-          )}
+          </MediaQuery>
         </Sdiv>
       </div>
     </>
