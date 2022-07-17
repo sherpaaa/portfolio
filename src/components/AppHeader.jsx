@@ -116,7 +116,7 @@ export const AppHeader = () => {
               </li>
             </SMenu>
           )}
-          {isMoble && (
+          <MediaQuery maxWidth={780}>
             <button
               type="button"
               aria-controls="drawer"
@@ -126,7 +126,8 @@ export const AppHeader = () => {
             >
               <MdMenu />
             </button>
-          )}
+          </MediaQuery>
+
           <MediaQuery maxWidth={780}>
             <div
               id="drawer"
