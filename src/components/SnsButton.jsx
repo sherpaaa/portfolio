@@ -2,6 +2,7 @@ import { MdChevronRight } from 'react-icons/md'
 
 export const SnsButton = (props) => {
   const bst = {
+    display: 'inline-block',
     padding: '0.5rem 1.25rem',
     borderRadius: '0.25rem',
     fontSize: '0.875rem',
@@ -10,6 +11,7 @@ export const SnsButton = (props) => {
     color: '#FFF',
     textDecoration: 'none',
     marginRight: '1rem',
+    marginBottom: '1rem',
   }
 
   return (

@@ -90,17 +90,17 @@ export default function Home() {
           <div>
             <SnsButton
               title={'note'}
-              color={'#A2CECB'}
+              color={'#41C9B4'}
               link={'https://note.com/sherpaaaaaa/'}
             />
             <SnsButton
               title={'Twitter'}
-              color={'#9CB5D2'}
+              color={'#1d9bf0'}
               link={'https://twitter.com/sherpaaaaaa'}
             />
             <SnsButton
               title={'Wantedly'}
-              color={'#A6C6D8'}
+              color={'#21BDDB'}
               link={'https://www.wantedly.com/id/kosuke_masuda'}
             />
           </div>
