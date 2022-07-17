@@ -128,7 +128,7 @@ export const AppHeader = () => {
             </button>
           </MediaQuery>
 
-          <MediaQuery maxWidth={780}>
+          {isMenuOpen && (
             <div
               id="drawer"
               class="drawer"
@@ -181,7 +181,7 @@ export const AppHeader = () => {
                 </button>
               </ul>
             </div>
-          </MediaQuery>
+          )}
         </Sdiv>
       </div>
     </>
