@@ -18,12 +18,12 @@ const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
   <BrowserRouter>
     <ScrollToTop />
-    <Routes basename={process.env.PUBLIC_URL}>
-      <Route path="/portfolio/" element={<Home />} />
-      <Route path="/portfolio/home" element={<Home />} />
-      <Route path="/portfolio/resume" element={<Resume />} />
-      <Route path="/portfolio/projects" element={<Projects />} />
-      <Route path="/portfolio/contact" element={<Contact />} />
+    <Routes>
+      <Route path={homeUrl + '/'} element={<Home />} />
+      <Route path={homeUrl + '/home'} element={<Home />} />
+      <Route path={homeUrl + '/resume'} element={<Resume />} />
+      <Route path={homeUrl + '/projects'} element={<Projects />} />
+      <Route path={homeUrl + '/contact'} element={<Contact />} />
       <Route path="*" element={<Error404 />} />
     </Routes>
   </BrowserRouter>,
