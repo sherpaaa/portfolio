@@ -5,22 +5,34 @@ export const ProjectCard = (props) => {
   const isDesktop = useMediaQuery({
     query: '(min-width:780px)',
   })
-  const isMoble = useMediaQuery({ query: '(max-width:780px' })
+  const isMobile = useMediaQuery({ query: '(max-width:780px' })
 
   const projectBase = {
     flexBasis: isDesktop && 'calc((100% - 2rem) / 2)',
     flextWidth: isDesktop && 'calc((100% - 2rem) / 2)',
-    maxWidth: isMoble && '327px',
     marginTop: '2rem',
-    // padding: isMoble && '0 1.5rem',
   }
   const projectImg = {
     backgroundColor: '#EDEEF1',
     border: 'none',
     width: isDesktop && '100%',
-    maxWidth: isMoble && '327px',
     height: isDesktop && '15rem',
-    height: isMoble && '100%',
+  }
+
+  const projectBaseM = {
+    flexBasis: isDesktop && 'calc((100% - 2rem) / 2)',
+    flextWidth: isDesktop && 'calc((100% - 2rem) / 2)',
+    maxWidth: '327px',
+    marginTop: '2rem',
+    padding: '0 1.5rem',
+  }
+  const projectImgM = {
+    backgroundColor: '#EDEEF1',
+    border: 'none',
+    width: isDesktop && '100%',
+    height: isDesktop && '15rem',
+    maxWidth: '327px',
+    // height: '100%',
   }
   const projectTitle = {
     fontSize: '1rem',
@@ -46,13 +58,27 @@ export const ProjectCard = (props) => {
     marginTop: '1rem',
   }
   return (
-    <div style={projectBase}>
-      <img src={props.rf} alt="データなし" style={projectImg} />
-      <h3 style={projectTitle}>{props.ptitle}</h3>
-      <span style={tag}>{props.ptag1}</span>{' '}
-      <span style={tag}>{props.ptag2}</span>{' '}
-      <span style={tag}>{props.ptag3}</span>{' '}
-      <p style={projectText}>{props.pcaption}</p>
-    </div>
+    <>
+      {isDesktop && (
+        <div style={projectBase}>
+          <img src={props.rf} alt="データなし" style={projectImg} />
+          <h3 style={projectTitle}>{props.ptitle}</h3>
+          <span style={tag}>{props.ptag1}</span>{' '}
+          <span style={tag}>{props.ptag2}</span>{' '}
+          <span style={tag}>{props.ptag3}</span>{' '}
+          <p style={projectText}>{props.pcaption}</p>
+        </div>
+      )}
+      {isMobile && (
+        <div style={projectBaseM}>
+          <img src={props.rf} alt="データなし" style={projectImgM} />
+          <h3 style={projectTitle}>{props.ptitle}</h3>
+          <span style={tag}>{props.ptag1}</span>{' '}
+          <span style={tag}>{props.ptag2}</span>{' '}
+          <span style={tag}>{props.ptag3}</span>{' '}
+          <p style={projectText}>{props.pcaption}</p>
+        </div>
+      )}
+    </>
   )
 }

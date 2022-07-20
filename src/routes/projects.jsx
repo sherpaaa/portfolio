@@ -18,9 +18,20 @@ export default function Projects() {
     margin: '0 auto',
     display: 'flex',
     flexWrap: isDesktop && 'wrap',
-    flexDirection: isMobile && 'column',
     alignItems: isDesktop && 'flex-start',
-    alignItems: isMobile && 'center',
+    justifyContent: 'space-between',
+    marginTop: '4rem',
+    marginBottom: '8rem',
+  }
+
+  const projectWrapperM = {
+    maxWidth: '48rem',
+    margin: '0 auto',
+    display: 'flex',
+    flexWrap: 'wrap',
+    alignItems: 'flex-start',
+    flexDirection: 'column',
+    alignItems: 'center',
     justifyContent: 'space-between',
     marginTop: '4rem',
     marginBottom: '8rem',
@@ -45,7 +56,8 @@ export default function Projects() {
         subtitle1={'Kousuke Masuda'}
         subtitle2={'Research and Design'}
       />
-      <div style={projectWrapper}>{projectList}</div>
+      {isDesktop && <div style={projectWrapper}>{projectList}</div>}
+      {isMobile && <div style={projectWrapperM}>{projectList}</div>}
 
       <Footer />
     </div>
