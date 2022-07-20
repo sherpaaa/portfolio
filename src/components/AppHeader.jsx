@@ -88,29 +88,29 @@ export const AppHeader = () => {
       <div>
         <Sdiv>
           <STitle>
-            <Link to="/home" style={titleLink}>
+            <Link to="home" style={titleLink}>
               Kousuke Masuda
             </Link>
           </STitle>
           {isDesktop && (
             <SMenu>
               <li>
-                <Link to="/home" style={menuItem}>
+                <Link to="home" style={menuItem}>
                   HOME
                 </Link>
               </li>
               <li>
-                <Link to="/resume" style={menuItem}>
+                <Link to="resume" style={menuItem}>
                   RESUME
                 </Link>
               </li>
               <li>
-                <Link to="/projects" style={menuItem}>
+                <Link to="projects" style={menuItem}>
                   PROJECTS
                 </Link>
               </li>
               <li>
-                <Link to="/contact" style={menuItem}>
+                <Link to="contact" style={menuItem}>
                   CONTACT
                 </Link>
               </li>

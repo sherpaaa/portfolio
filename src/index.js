@@ -19,12 +19,13 @@ root.render(
   <BrowserRouter>
     <ScrollToTop />
     <Routes>
-      <Route path={homeUrl + '/'} element={<Home />} />
-      <Route path="/home" element={<Home />} />
-      <Route path="/resume" element={<Resume />} />
-      <Route path="/projects" element={<Projects />} />
-      <Route path="/contact" element={<Contact />} />
-      <Route path="*" element={<Error404 />} />
+      <Route path={homeUrl + '/'} element={<Home />}>
+        <Route path="home" element={<Home />} />
+        <Route path="resume" element={<Resume />} />
+        <Route path="projects" element={<Projects />} />
+        <Route path="contact" element={<Contact />} />
+        <Route path="*" element={<Error404 />} />
+      </Route>
     </Routes>
   </BrowserRouter>,
 )

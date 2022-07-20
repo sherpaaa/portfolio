@@ -56,22 +56,22 @@ export const Footer = () => {
           >
             <ul style={mobileMenu}>
               <li>
-                <Link to="/home" style={mobileMenuItem}>
+                <Link to="home" style={mobileMenuItem}>
                   HOME
                 </Link>
               </li>
               <li>
-                <Link to="/resume" style={mobileMenuItem}>
+                <Link to="resume" style={mobileMenuItem}>
                   RESUME
                 </Link>
               </li>
               <li>
-                <Link to="/projects" style={mobileMenuItem}>
+                <Link to="projects" style={mobileMenuItem}>
                   PROJECTS
                 </Link>
               </li>
               <li>
-                <Link to="/contact" style={mobileMenuItem}>
+                <Link to="contact" style={mobileMenuItem}>
                   CONTACT
                 </Link>
               </li>
