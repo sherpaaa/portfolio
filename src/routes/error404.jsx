@@ -41,7 +41,7 @@ export const Error404 = () => {
         <p style={errorCaption}>
           おっと、ねこちゃんは見つかりましたが、ページは見つかりませんでした
         </p>
-        <Link to="/home" style={backtoHome}>
+        <Link to="/portfolio/home" style={backtoHome}>
           HOMEへ戻る
         </Link>
       </div>

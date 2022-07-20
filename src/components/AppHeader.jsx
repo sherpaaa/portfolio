@@ -88,29 +88,29 @@ export const AppHeader = () => {
       <div>
         <Sdiv>
           <STitle>
-            <Link to="home" style={titleLink}>
+            <Link to="/portfolio/home" style={titleLink}>
               Kousuke Masuda
             </Link>
           </STitle>
           {isDesktop && (
             <SMenu>
               <li>
-                <Link to="home" style={menuItem}>
+                <Link to="/portfolio/home" style={menuItem}>
                   HOME
                 </Link>
               </li>
               <li>
-                <Link to="resume" style={menuItem}>
+                <Link to="/portfolio/resume" style={menuItem}>
                   RESUME
                 </Link>
               </li>
               <li>
-                <Link to="projects" style={menuItem}>
+                <Link to="/portfolio/projects" style={menuItem}>
                   PROJECTS
                 </Link>
               </li>
               <li>
-                <Link to="contact" style={menuItem}>
+                <Link to="/portfolio/contact" style={menuItem}>
                   CONTACT
                 </Link>
               </li>
@@ -138,7 +138,7 @@ export const AppHeader = () => {
               <ul style={mobileMenu}>
                 <li>
                   <Link
-                    to="home"
+                    to="/portfolio/home"
                     style={mobileMenuItem}
                     onClick={switchMenuOpen}
                   >
@@ -147,7 +147,7 @@ export const AppHeader = () => {
                 </li>
                 <li>
                   <Link
-                    to="resume"
+                    to="/portfolio/resume"
                     style={mobileMenuItem}
                     onClick={switchMenuOpen}
                   >
@@ -156,7 +156,7 @@ export const AppHeader = () => {
                 </li>
                 <li>
                   <Link
-                    to="projects"
+                    to="/portfolio/projects"
                     style={mobileMenuItem}
                     onClick={switchMenuOpen}
                   >
@@ -165,7 +165,7 @@ export const AppHeader = () => {
                 </li>
                 <li>
                   <Link
-                    to="contact"
+                    to="/portfolio/contact"
                     style={mobileMenuItem}
                     onClick={switchMenuOpen}
                   >
@@ -173,7 +173,7 @@ export const AppHeader = () => {
                   </Link>
                 </li>
                 <button
-                  type="button"
+                  type="/portfolio/button"
                   onClick={switchMenuOpen}
                   style={closeButton}
                 >
