@@ -17,8 +17,8 @@ export default function Projects() {
     maxWidth: '48rem',
     margin: '0 auto',
     display: 'flex',
-    flexWrap: isDesktop && 'wrap',
-    alignItems: isDesktop && 'flex-start',
+    flexWrap: 'wrap',
+    alignItems: 'flex-start',
     justifyContent: 'space-between',
     marginTop: '4rem',
     marginBottom: '8rem',
@@ -26,15 +26,12 @@ export default function Projects() {
 
   const projectWrapperM = {
     maxWidth: '48rem',
-    margin: '0 auto',
     display: 'flex',
-    flexWrap: 'wrap',
-    alignItems: 'flex-start',
     flexDirection: 'column',
     alignItems: 'center',
-    justifyContent: 'space-between',
     marginTop: '4rem',
     marginBottom: '8rem',
+    padding: '1rem',
   }
 
   const projectList = projectitems.map((pitem, index) => (
@@ -57,7 +54,7 @@ export default function Projects() {
         subtitle2={'Research and Design'}
       />
       {isDesktop && <div style={projectWrapper}>{projectList}</div>}
-      {isDesktop || <div style={projectWrapperM}>{projectList}</div>}
+      {!isDesktop && <div style={projectWrapperM}>{projectList}</div>}
       <Footer />
     </div>
   )

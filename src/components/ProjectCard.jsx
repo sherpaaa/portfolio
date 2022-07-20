@@ -16,23 +16,21 @@ export const ProjectCard = (props) => {
     backgroundColor: '#EDEEF1',
     border: 'none',
     width: isDesktop && '100%',
-    height: isDesktop && '15rem',
+    height: isDesktop && '100%',
   }
 
   const projectBaseM = {
     flexBasis: isDesktop && 'calc((100% - 2rem) / 2)',
     flextWidth: isDesktop && 'calc((100% - 2rem) / 2)',
-    maxWidth: '327px',
+    maxWidth: '343px',
     marginTop: '2rem',
-    padding: '0 1.5rem',
   }
   const projectImgM = {
     backgroundColor: '#EDEEF1',
     border: 'none',
     width: isDesktop && '100%',
     height: isDesktop && '15rem',
-    maxWidth: '327px',
-    // height: '100%',
+    maxWidth: '100%',
   }
   const projectTitle = {
     fontSize: '1rem',
@@ -69,7 +67,7 @@ export const ProjectCard = (props) => {
           <p style={projectText}>{props.pcaption}</p>
         </div>
       )}
-      {isMobile && (
+      {!isDesktop && (
         <div style={projectBaseM}>
           <img src={props.rf} alt="データなし" style={projectImgM} />
           <h3 style={projectTitle}>{props.ptitle}</h3>
