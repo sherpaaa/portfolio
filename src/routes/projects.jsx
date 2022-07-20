@@ -57,8 +57,7 @@ export default function Projects() {
         subtitle2={'Research and Design'}
       />
       {isDesktop && <div style={projectWrapper}>{projectList}</div>}
-      {isMobile || <div style={projectWrapperM}>{projectList}</div>}
-
+      {isDesktop || <div style={projectWrapperM}>{projectList}</div>}
       <Footer />
     </div>
   )
