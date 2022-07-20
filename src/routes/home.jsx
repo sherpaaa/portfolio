@@ -50,7 +50,7 @@ export default function Home() {
 
   const profileText = {
     ifontSize: '1rem',
-    color: '#212841',
+    color: '#465071',
     lineHeight: '1.75rem',
     marginBottom: '1.5rem',
   }

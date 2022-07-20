@@ -50,9 +50,10 @@ export const ProjectCard = (props) => {
   }
 
   const projectText = {
-    fontSize: '0.875rem',
+    fontSize: '1rem',
+    letterSpacing: '0.05rem',
     color: '#465071',
-    lineHeight: '1.5rem',
+    lineHeight: '1.75rem',
     marginTop: '1rem',
   }
   return (

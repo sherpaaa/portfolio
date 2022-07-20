@@ -18,7 +18,8 @@ export default function Contact() {
   }
 
   const contactText = {
-    lineHeight: '3rem',
+    color: '#465071',
+    lineHeight: '2rem',
     margin: '1rem auto 2rem auto',
     textAlign: 'center',
   }
