@@ -4,6 +4,7 @@ import { AppHeader } from './components/AppHeader'
 function App() {
   return (
     <div className="App">
+      <AppHeader />
       <Outlet />
     </div>
   )

@@ -1,9 +1,11 @@
 import { MainImage } from '../components/MainImage'
 import iconImg from '../img/icon.JPG'
 import { SnsButton } from '../components/SnsButton'
+
 import { Footer } from '../components/Footer'
 import { useMediaQuery } from 'react-responsive'
 import { AppHeader } from '../components/AppHeader'
+import { SnsStyledButton } from '../components/SnsStyledButton'
 
 export default function Home() {
   const isMobile = useMediaQuery({ query: '(max-width:780px)' })
@@ -88,21 +90,24 @@ export default function Home() {
           </p>
           <p style={profileText}>HCD-Net認定人間中心設計専門家の資格保有</p>
           <div>
-            <SnsButton
+            <SnsStyledButton
               title={'note'}
               color={'#41C9B4'}
+              bcolor={'#34A190'}
               link={'https://note.com/sherpaaaaaa/'}
-            />
-            <SnsButton
-              title={'Twitter'}
-              color={'#1d9bf0'}
+            ></SnsStyledButton>
+            <SnsStyledButton
+              title={'twitter'}
+              color={'#1D9BF0'}
+              bcolor={'#177CC0'}
               link={'https://twitter.com/sherpaaaaaa'}
-            />
-            <SnsButton
-              title={'Wantedly'}
-              color={'#21bddb'}
+            ></SnsStyledButton>{' '}
+            <SnsStyledButton
+              title={'wantedly'}
+              color={'#21BDDB'}
+              bcolor={'#1A97AF'}
               link={'https://www.wantedly.com/id/kosuke_masuda'}
-            />
+            ></SnsStyledButton>
           </div>
         </div>
       </div>
