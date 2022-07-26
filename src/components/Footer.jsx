@@ -61,13 +61,13 @@ export const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/portfolio/resume" style={mobileMenuItem}>
-                  RESUME
+                <Link to="/portfolio/projects" style={mobileMenuItem}>
+                  PROJECTS
                 </Link>
               </li>
               <li>
-                <Link to="/portfolio/projects" style={mobileMenuItem}>
-                  PROJECTS
+                <Link to="/portfolio/resume" style={mobileMenuItem}>
+                  RESUME
                 </Link>
               </li>
               <li>

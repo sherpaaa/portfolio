@@ -99,14 +99,15 @@ export const AppHeader = () => {
                   HOME
                 </Link>
               </li>
-              <li>
-                <Link to="/portfolio/resume" style={menuItem}>
-                  RESUME
-                </Link>
-              </li>
+
               <li>
                 <Link to="/portfolio/projects" style={menuItem}>
                   PROJECTS
+                </Link>
+              </li>
+              <li>
+                <Link to="/portfolio/resume" style={menuItem}>
+                  RESUME
                 </Link>
               </li>
               <li>
@@ -145,15 +146,7 @@ export const AppHeader = () => {
                     HOME
                   </Link>
                 </li>
-                <li>
-                  <Link
-                    to="/portfolio/resume"
-                    style={mobileMenuItem}
-                    onClick={switchMenuOpen}
-                  >
-                    RESUME
-                  </Link>
-                </li>
+
                 <li>
                   <Link
                     to="/portfolio/projects"
@@ -161,6 +154,15 @@ export const AppHeader = () => {
                     onClick={switchMenuOpen}
                   >
                     PROJECTS
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/portfolio/resume"
+                    style={mobileMenuItem}
+                    onClick={switchMenuOpen}
+                  >
+                    RESUME
                   </Link>
                 </li>
                 <li>
