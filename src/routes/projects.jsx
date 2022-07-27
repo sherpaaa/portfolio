@@ -43,6 +43,10 @@ export default function Projects() {
       ptag2={pitem.ptag2}
       ptag3={pitem.ptag3}
       pcaption={pitem.pcaption}
+      point1={pitem.point1}
+      point2={pitem.point2}
+      member={pitem.member}
+      duration={pitem.duration}
     />
   ))
   return (
