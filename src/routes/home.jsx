@@ -68,7 +68,7 @@ export default function Home() {
 
       <div style={profileWrapper}>
         <div style={profileContainer}>
-          <img src={iconImg} alt="" style={imgStyle} />
+          <img src={iconImg} alt="似顔絵" style={imgStyle} />
           <span style={profileTitle}>KOSUKE MASUDA</span>
           <span style={profileNote}>Digital Product Designer</span>
           <span style={profileNote}>×</span>
