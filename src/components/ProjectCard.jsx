@@ -211,7 +211,7 @@ export const ProjectCard = (props) => {
           <p>{props.pcaption} </p>
           <h3>ポイント</h3>
           <ul>
-            <li>{props.ptitle}</li>
+            <li>{props.point1}</li>
             <li>{props.point2}</li>
           </ul>
           <dl style={dlstyle}>
