@@ -76,7 +76,10 @@ export default function Home() {
         </div>
         <div style={profileTextWrapper}>
           <p style={profileText}>
-            プロダクトデザイナー。クラウド人事労務ソフトのリサーチ・デザインを担当。
+            増田 康祐　デジタルプロダクトデザイナー/UXリサーチャー
+          </p>
+          <p style={profileText}>
+            freee株式会社にてSaaSのリサーチ・デザインを担当。
             定性と定量を合わせたリサーチとリサーチに基づいたプロダクトデザインを行っている。
           </p>
           <p style={profileText}>
@@ -86,9 +89,11 @@ export default function Home() {
           </p>
           <p style={profileText}>
             2018年4月にfreee株式会社入社。クラウド会計ソフトのUXリサーチ・デザインを担当する。
-            ほぼゼロの状態からUXリサーチをプロダクト開発チームに根付かせ、ユーザー視点でのプロダクト開発文化を定着させた。リサーチチームの立ち上げを経て、freee人事労務や税理士向けのプロダクトのリサーチ・デザインを担当。{' '}
+            ほぼゼロの状態からUXリサーチをプロダクト開発チームに根付かせ、ユーザー視点でのプロダクト開発文化を定着させる。リサーチチームの立ち上げを経て、freee人事労務や税理士向けのプロダクトなど複数プロダクトのリサーチ・デザインを担当。{' '}
           </p>
-          <p style={profileText}>HCD-Net認定人間中心設計専門家の資格保有</p>
+          <p style={profileText}>
+            2019年 HCD-Net認定人間中心設計専門家資格を取得
+          </p>
           <div>
             <SnsStyledButton
               title={'note'}
