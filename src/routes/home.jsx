@@ -96,22 +96,24 @@ export default function Home() {
           </p>
           <div>
             <SnsStyledButton
-              title={'note'}
-              color={'#41C9B4'}
-              bcolor={'#34A190'}
-              link={'https://note.com/sherpaaaaaa/'}
-            ></SnsStyledButton>
-            <SnsStyledButton
               title={'twitter'}
               color={'#1D9BF0'}
               bcolor={'#177CC0'}
               link={'https://twitter.com/sherpaaaaaa'}
             ></SnsStyledButton>{' '}
             <SnsStyledButton
-              title={'wantedly'}
-              color={'#21BDDB'}
-              bcolor={'#1A97AF'}
-              link={'https://www.wantedly.com/id/kosuke_masuda'}
+              title={'LinkedIn'}
+              color={'#0a66c2'}
+              bcolor={'#08529B'}
+              link={
+                'https://www.linkedin.com/in/%E5%BA%B7%E7%A5%90-%E5%A2%97%E7%94%B0-95073a1b6/'
+              }
+            ></SnsStyledButton>
+            <SnsStyledButton
+              title={'note'}
+              color={'#41C9B4'}
+              bcolor={'#34A190'}
+              link={'https://note.com/sherpaaaaaa/'}
             ></SnsStyledButton>
           </div>
         </div>
