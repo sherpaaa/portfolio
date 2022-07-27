@@ -66,7 +66,7 @@ export const ProjectCard = (props) => {
   }
 
   const ModalTitle = {
-    color: '#434A63',
+    color: '#4A5477',
     fontSize: '1.25rem',
     margin: '1rem 0',
   }
@@ -81,7 +81,7 @@ export const ProjectCard = (props) => {
   const cancelStyle = {
     fontSize: '1.5rem',
     cursor: 'pointer',
-    color: '#434A63',
+    color: '#4A5477',
   }
   const contentSection = {
     padding: '1.25rem',
@@ -97,6 +97,7 @@ export const ProjectCard = (props) => {
   const dtstyle = {
     width: '100%',
     padding: '0.5rem 1rem',
+    color: '#4A5477',
     backgroundColor: '#E3E5EE',
     fontSize: '0.875rem',
   }
@@ -106,6 +107,7 @@ export const ProjectCard = (props) => {
     padding: '0.5rem 1rem',
     marginLeft: '0',
     marginBottom: '10px',
+    color: '#4A5477',
     backgroundColor: '#F6F7F9',
     fontSize: '0.875rem',
   }
@@ -144,17 +146,16 @@ export const ProjectCard = (props) => {
   }
   const projectTitle = {
     fontSize: '1rem',
-    color: '#465071',
+    color: '#4A5477',
   }
   const tag = {
     display: 'inline-block',
-    padding: '0.4rem 0.75rem',
+    padding: '0.3rem 1rem',
     borderRadius: '1rem',
-    fontSize: '0.5rem',
+    fontSize: '0.875rem',
     letterSpacing: '0.08rem',
-    fontWeight: '600',
-    backgroundColor: '#A3ABC6',
-    color: '#0F1D4D',
+    backgroundColor: '#E3E5EE',
+    color: '#4A5477',
     marginRight: '0.5rem',
     marginBottom: '0.5rem',
   }
@@ -162,7 +163,7 @@ export const ProjectCard = (props) => {
   const projectText = {
     fontSize: '1rem',
     letterSpacing: '0.05rem',
-    color: '#465071',
+    color: '#4A5477',
     lineHeight: '1.75rem',
     marginTop: '1rem',
   }
@@ -221,9 +222,8 @@ export const ProjectCard = (props) => {
             <dd style={ddstyle}>{props.member}</dd>
             <dt style={dtstyle}>担当業務</dt>
             <dd style={ddstyle}>
-              <span style={tag}>{props.ptag1}</span>{' '}
-              <span style={tag}>{props.ptag2}</span>{' '}
-              <span style={tag}>{props.ptag3}</span>{' '}
+              <span>{props.ptag1}</span> <span>{props.ptag2}</span>{' '}
+              <span>{props.ptag3}</span>{' '}
             </dd>{' '}
           </dl>
         </ContentSection>
@@ -237,14 +237,14 @@ display:block;
 width:100%;
 padding:0.5rem;
 margin:1.5rem 0;
-color:#434A63;
+color:#4A5477;
 background:#FFF;
-border:solid 1px #434A63;
+border:solid 1px #4A5477;
 border-radius:0.25rem;
 font-size:0.875rem;
 letter-spacing:0.1rem;
 &:hover {
-  background-color:#434A63;
+  background-color:#4A5477;
   color:#FFF;
   cursor: pointer;
 `
@@ -258,11 +258,34 @@ const ContentSection = styled.div`
   }
   > p {
     margin:0.5rem 0 1rem 0;
+    font-size: 1rem;
+    letter-spacing: 0.05rem;
+    color: #4A5477;
+    line-height: 1.75rem;
   }
   > ul {
     padding-left:1rem;
     margin:0.5rem 0 1rem 0;
-      
+      >li {
+        font-size: 1rem;
+        letter-spacing: 0.05rem;
+        color: #4A5477;
+        line-height: 1.75rem;
+      }
+    }
+  }
+  >dl{
+    dd{
+      span{
+        display: inline-block;
+        padding: 0.3rem 1rem;
+        border-radius: 1rem;
+        font-size: 0.875rem;
+        letter-spacing: 0.08rem;
+        background-color: #E3E5EE;
+        color: #4A5477;
+        margin-right: 0.5rem;
+      }
     }
   }
 `
