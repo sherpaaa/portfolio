@@ -62,7 +62,7 @@ export const ProjectCard = (props) => {
     justifyContent: 'space-between',
     alignItems: 'center',
     backgroundColor: '#FFF',
-    padding: '1rem 1.25rem',
+    padding: '1rem 1.5rem 1rem 1.25rem',
   }
 
   const ModalTitle = {
@@ -72,8 +72,8 @@ export const ProjectCard = (props) => {
   }
 
   const closeButton = {
-    width: '2rem',
-    height: '2rem',
+    width: '2.5rem',
+    height: '2.5rem',
     border: 'none',
     backgroundColor: '#FFF',
   }
@@ -82,34 +82,6 @@ export const ProjectCard = (props) => {
     fontSize: '1.5rem',
     cursor: 'pointer',
     color: '#4A5477',
-  }
-  const contentSection = {
-    padding: '1.25rem',
-  }
-
-  //dlのスタイル
-  const dlstyle = {
-    display: 'flex',
-    flexWrap: 'wrap',
-    width: '100%',
-  }
-
-  const dtstyle = {
-    width: '100%',
-    padding: '0.5rem 1rem',
-    color: '#4A5477',
-    backgroundColor: '#E3E5EE',
-    fontSize: '0.875rem',
-  }
-
-  const ddstyle = {
-    width: '100%',
-    padding: '0.5rem 1rem',
-    marginLeft: '0',
-    marginBottom: '10px',
-    color: '#4A5477',
-    backgroundColor: '#F6F7F9',
-    fontSize: '0.875rem',
   }
 
   //レスポンシブの記述
@@ -153,6 +125,7 @@ export const ProjectCard = (props) => {
     padding: '0.3rem 1rem',
     borderRadius: '1rem',
     fontSize: '0.875rem',
+    fontWeight: '600',
     letterSpacing: '0.08rem',
     backgroundColor: '#E3E5EE',
     color: '#4A5477',
@@ -215,13 +188,13 @@ export const ProjectCard = (props) => {
             <li>{props.point1}</li>
             <li>{props.point2}</li>
           </ul>
-          <dl style={dlstyle}>
-            <dt style={dtstyle}>期間</dt>
-            <dd style={ddstyle}>{props.duration}</dd>
-            <dt style={dtstyle}>メンバー</dt>
-            <dd style={ddstyle}>{props.member}</dd>
-            <dt style={dtstyle}>担当業務</dt>
-            <dd style={ddstyle}>
+          <dl>
+            <dt>期間</dt>
+            <dd>{props.duration}</dd>
+            <dt>メンバー</dt>
+            <dd>{props.member}</dd>
+            <dt>担当業務</dt>
+            <dd>
               <span>{props.ptag1}</span> <span>{props.ptag2}</span>{' '}
               <span>{props.ptag3}</span>{' '}
             </dd>{' '}
@@ -275,7 +248,27 @@ const ContentSection = styled.div`
     }
   }
   >dl{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+    dt{
+      width: 100%;
+      padding: 0.5rem 1rem;
+      color:#4A5477;
+      background-color: #E3E5EE;
+      font-size: 0.875rem;
+      font-weight:600;
+    }
+
     dd{
+      width:100%;
+      padding: 0.5rem 1rem;
+      margin-left: 0;
+      margin-bottom: 10px;
+      color: #4A5477;
+      background-color: #F6F7F9;
+      font-size: 0.875rem;
       span{
         display: inline-block;
         padding: 0.3rem 1rem;
@@ -284,7 +277,7 @@ const ContentSection = styled.div`
         letter-spacing: 0.08rem;
         background-color: #E3E5EE;
         color: #4A5477;
-        margin-right: 0.5rem;
+        margin: 0.5rem 0.5rem 0.5rem 0;
       }
     }
   }

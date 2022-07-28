@@ -20,8 +20,8 @@ export const ResumeItem = (props) => {
     fontSize: '0.75rem',
     fontWeight: '600',
     letterSpacing: '0.08rem',
-    backgroundColor: '#A3ABC6',
-    color: '#0F1D4D',
+    backgroundColor: '#E3E5EE',
+    color: '#4A5477',
     marginRight: '0.5rem',
     marginBottom: '0.5rem',
   }
