@@ -234,16 +234,16 @@ const ContentSection = styled.div`
     font-size: 1rem;
     letter-spacing: 0.05rem;
     color: #4A5477;
-    line-height: 1.75rem;
+    line-height: 1.875rem;
   }
   > ul {
     padding-left:1rem;
-    margin:0.5rem 0 1rem 0;
+    margin:0.5rem 0 1.5rem 0;
       >li {
         font-size: 1rem;
         letter-spacing: 0.05rem;
         color: #4A5477;
-        line-height: 1.75rem;
+        line-height: 1.875rem;
       }
     }
   }
