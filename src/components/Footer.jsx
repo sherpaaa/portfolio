@@ -81,7 +81,7 @@ export const Footer = () => {
       </MediaQuery>
 
       <footer style={footerStyle}>
-        <p style={footerText}>© 2022 KOUSUKE MASUDA</p>
+        <p style={footerText}>© 2023 KOUSUKE MASUDA</p>
       </footer>
     </>
   )

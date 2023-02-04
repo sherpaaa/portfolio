@@ -1,8 +1,18 @@
 export const resumeItems = [
   {
-    index: '1',
+    index: '5',
     title: 'Product Designer',
-    affiliation: 'freee 株式会社 2021/4 - 2022/8',
+    affiliation: '株式会社ログラス  2022/9 -',
+    tag1: 'プロダクトデザイン',
+    tag2: 'UXリサーチ',
+    tag3: 'デザインシステム',
+    text:
+      '経営管理クラウドLoglassのリサーチ・デザインを担当。プロダクトの改善におけるリサーチ・デザインを担当。合わせてプロダクト共通のデザインシステムの構築も進めている。',
+  },
+  {
+    index: '4',
+    title: 'Product Designer',
+    affiliation: 'freee株式会社 2021/4 - 2022/8',
     tag1: 'UIデザイン',
     tag2: 'UXデザイン',
     tag3: 'UXリサーチ',
@@ -10,9 +20,9 @@ export const resumeItems = [
       'クラウド人事労務ソフトのUX/UIデザインを担当。社内のリサーチ定着を機にデザインチームに戻る。利用初期ユーザーに向けた機能のデザイン・リサーチを担当。社内では改善しづらい領域とされていたが、リサーチや社内を横断したプロジェクト進行によって、ユーザーの初期設定の数値を改善した。',
   },
   {
-    index: '2',
+    index: '3',
     title: 'UX Researcher',
-    affiliation: 'freee 株式会社  2019/7 - 2021/3',
+    affiliation: 'freee株式会社  2019/7 - 2021/3',
     tag1: 'ユーザーインタビュー',
     tag2: 'プロトタイピング',
     tag3: 'ワークショップ',
@@ -20,9 +30,9 @@ export const resumeItems = [
       '19年7月より、開発組織内でのリサーチの需要が増えたことでリサーチ単独のチームを発足することとなり、リサーチ業務に専念。組織を横断する複雑なテーマや不確実性の高いテーマに対するUXリサーチを担当。また増加した社内のリサーチを効率化するためのプロセス整備も進めた。',
   },
   {
-    index: '3',
+    index: '2',
     title: 'UX Designer',
-    affiliation: 'freee 株式会社  2018/4 - 2019/6',
+    affiliation: 'freee株式会社  2018/4 - 2019/6',
     tag1: 'ユーザーインタビュー',
     tag2: 'UXデザイン',
     tag3: 'UXリサーチ',
@@ -30,7 +40,7 @@ export const resumeItems = [
       'クラウド会計ソフトのUX/UIデザインを担当。既存機能や新規機能に関してユーザーリサーチを行い、UX/UIや仕様を策定。ユーザビリティテストによるUIの改善も実施してきた。加えて社内のUXリサーチ普及活動に尽力。ユーザーリサーチを社内の開発プロセスに組み込むまでに普及させた。',
   },
   {
-    index: '4',
+    index: '1',
     title: 'UX Designer',
     affiliation: "U'eyesDesign  2014/4 - 2018/3",
     tag1: 'ユーザーインタビュー',
